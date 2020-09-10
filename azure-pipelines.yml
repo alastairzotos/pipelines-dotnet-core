@@ -41,10 +41,8 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Free Trial(9dee6ac1-3537-49c4-9e0c-0f8da691ff1e)'
+        azureSubscription: 'Service Connection 1'
         appType: 'webAppLinux'
         WebAppName: 'test-app'
-        packageForLinux: '$(System.ArtifactsDirectory)'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
         RuntimeStack: 'DOTNETCORE|2.1'
-        StartupCommand: './pipelines-dotnet-core.dll'
-
