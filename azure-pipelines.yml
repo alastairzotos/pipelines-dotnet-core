@@ -44,5 +44,5 @@ stages:
         azureSubscription: 'Service Connection 1'
         appType: 'webAppLinux'
         WebAppName: 'test-app'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        packageForLinux: '$(System.ArtifactsDirectory)'
         RuntimeStack: 'DOTNETCORE|2.1'
