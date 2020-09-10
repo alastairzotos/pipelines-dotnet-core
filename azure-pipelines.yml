@@ -13,7 +13,7 @@ variables:
   buildConfiguration: 'Release'
 
 stages:
-- stage: 'Create artifact'
+- stage: 'CI'
   jobs:
   - job:
     steps:
