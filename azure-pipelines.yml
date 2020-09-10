@@ -44,8 +44,7 @@ stages:
         azureSubscription: 'Free Trial(9dee6ac1-3537-49c4-9e0c-0f8da691ff1e)'
         appType: 'webAppLinux'
         WebAppName: 'test-app'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        packageForLinux: 'drop'
         RuntimeStack: 'DOTNETCORE|2.1'
-        StartupCommand: '$(System.ArtifactsDirectory)/drop/pipelines-dotnet-core.dll'
-
+        StartupCommand: '$(System.ArtifactsDirectory)/pipelines-dotnet-core.dll'
 
